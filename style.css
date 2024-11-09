@@ -35,7 +35,7 @@ header h1 {
 @media (max-width: 600px) {
   header {
     background-image: url("kuva_pieni.jpg"); /* Pienille näytöille */
-    background-attachment: scroll; /* Ei kiinteä puhelimilla */
+    background-attachment: fixed; /* Ei kiinteä puhelimilla */
   }
 
   
@@ -45,7 +45,7 @@ header h1 {
 @media (min-width: 601px) {
   header {
     background-image: url("taustakuva_iso.jpg"); /* Vaihtaa taustakuvan */
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 }
 
