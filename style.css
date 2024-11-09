@@ -17,22 +17,13 @@ header {
   text-align: center;
   overflow: hidden;
   position: relative;
-  background-image: url("taustakuva_iso.jpg"); /* Suurille näytöille */
+  /*  background-image: url("taustakuva_iso.jpg"); /* Suurille näytöille */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Kiinteä tausta */
 }
 
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.35); /* Tummennuskerros */
-  z-index: 1;
-}
+
 
 /* Tekstin tyyli */
 header h1 {
@@ -46,18 +37,20 @@ header h1 {
     background-image: url("kuva_pieni.jpg"); /* Pienille näytöille */
     background-attachment: scroll; /* Ei kiinteä puhelimilla */
   }
+
+  
 }
 
 /* Tämä varmistaa vaihtumisen myös tableteille (600-768px) */
-@media (max-width: 768px) and (min-width: 601px) {
+@media (min-width: 601px) {
   header {
-    background-image: url("kuva_pieni.jpg"); /* Vaihtaa taustakuvan */
+    background-image: url("taustakuva_iso.jpg"); /* Vaihtaa taustakuvan */
     background-attachment: scroll;
   }
 }
 
 .header-image {
-  background-image: url("taustakuva_iso.jpg");
+  /*background-image: url("taustakuva_iso.jpg"); */
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -92,7 +85,7 @@ header .header-image {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("taustakuva_iso.jpg");
+ /* background-image: url("taustakuva_iso.jpg"); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;  /* Kuvan pysyminen paikallaan */
